@@ -1,0 +1,93 @@
+<style>
+  /*Added some standout features to header*/
+
+h1 {
+  color: #fcb514;
+  display: block;
+  font-size: 40px;
+  text-align: center;
+  background-color: #002f87;
+}
+h3 {
+  text-align: center;
+  font-size: 20px;
+}
+p {
+  color: #002f87;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0;
+  background-color: #fcb514;
+}
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+#img-caption {
+  text-align: center;
+}
+ul {
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+/*Some restrictions for different screen sizes*/
+@media (max-width: 400px) {
+  #img-caption {
+    font-size: 1.4rem;
+  }
+@media (max-width: 400px) {
+  #main {
+    margin: 0;
+  }
+@media (max-width: 400px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+</style>
+/*heading*/
+<main id="main">
+ <h1 id="title">St. Louis Blues</h1>
+  <p>2019 Stanley Cup Champions</p>
+  <figure id="img-div">
+    <img id="image"
+       src="https://i.postimg.cc/xdTyFXtb/AP-Cup-pic.jpg" alt="Blues captain Alex Petriangelo celebrates with Stanley Cup"
+         />
+         <figcaption id="img-caption">
+          Alex Pietrangelo celebrates with Stanley Cup held high over his head
+    </figcaption>
+    </figure>
+    /*Blues Tribute information*/
+  <section id="tribute-info">
+    <h3 id="headline">Here is a timeline of the St. Louis Blues' season journey to the cup:</h3>
+  <ul>
+    <li><strong>July 1st, 2018</strong> - Blues trade Patrik Berglund, Vladimir Sobotka, Tage Thompson, and a 2nd round pick to Sabres in exchange for Ryan O' Reilly
+
+    <li><strong>November 19th, 2018</strong> - Blues fire Head Coach Mike Yeo and name Craig Berube Interim Head Coach
+
+    <li><strong>January 3rd, 2019</strong> - Blues sit at dead last in the league roughly halfway through the season, with a 15-18-4 record
+
+    <li><strong>January 5th, 2019</strong> - Rookie goaltender Jordan Binnington is called up from AHL affiliate
+
+    <li><strong>March 29th, 2019</strong> - On the back of strong performances from Binnington and company, Blues go 30-10-5 to close out regular season and earn playoff birth
+
+    <li><strong>June 12th, 2019</strong> - Saint Louis Blues defeat Boston Bruins in 7 games to clinch first ever franchise Stanley Cup
+  </ul>
+    <h3>For a more in depth look at the miraculous 2018-2019 season by the Blues, visit
+    <a
+        id="tribute-link"
+        href="https://en.wikipedia.org/wiki/2018%E2%80%9319_St._Louis_Blues_season"
+       target="_blank">Wikipedia Page</a>
+    </h3>
+  </section>
+</main>
